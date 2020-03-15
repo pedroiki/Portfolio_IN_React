@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-top: 10px;
+
+  background-color: rgb(198, 219, 75);
+  color:black;
+}
+
+.Navbar__title {
+  font-family: 'Coiny', cursive;
+  font-size: 30px;
+}
+
+.Navbar__icons {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar__icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Navbar__icons a :hover{
+  color: #600473;
+}
+
+.Navbar__icon {
+  height: 100%;
+  width: 35px;
+  padding: 5px;
+}
