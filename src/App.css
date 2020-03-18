@@ -1,8 +1,10 @@
 .App {
   text-align: center;
-  background-color:#0B0B0D ; 
+  background-color:rgba(150, 158, 37, 0.459) ; 
    min-height: 100vh;
+
    
+   /* #0B0B0D */
    /* #1D1919 */
 
    
@@ -22,6 +24,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+
+
+
+/* .Title {
+
+  colour: rgb(67, 121, 67);
+  
+  } */
+
+
+
 
 
 

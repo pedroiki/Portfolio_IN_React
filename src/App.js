@@ -7,6 +7,7 @@ import Counter from "./components/Counter.js";
 import Nav     from "./components/Nav.js";
 import Footer from  "./components/Footer.js";
 import {Button} from "@material-ui/core" ;
+import Navebar2 from  "./components/Navebar2.js";
 
 
 // import Topnav from "./components/Topnav.js";
@@ -21,28 +22,46 @@ class App extends React.Component {
         {/* //isto quer dizer que tem uma class "app" nos estilos */}
           <header className="App-header">
           </header>
-          
-            <Title title={"Carlos Gomes Porfolio (React.js) "}>  </Title>
+      
+
+
+
+
+
+<Navebar2></Navebar2>
+
+<br></br>
+
+
+
+<br></br>
+
+
+<Title title={"Carlos P Gomes Porfolio (React.js) "}>  </Title>
+
+
             {/* <button>oi</button>
             <Button color="primary" variant="contained">oi</Button> */}
 
 
 
-
-
-
-
-            <iframe src="https://giphy.com/embed/26tn33aiTi1jkl6H6" width="480" height="270" frameBorder="0"
-             class="giphy-embed" allowFullScreen></iframe><p>
-               <a href="https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6"></a></p>
+<br></br>
 
 
 
 
 
+            <img src="https://pedroiki.github.io/portfolio-cgomes/images/software1.gif" width="480" height="270" frameBorder="0"
+             class="gif" border="rounded" ></img><p>
+               </p>
 
 
-            <Nav> </Nav>
+
+
+
+
+
+            
             
             {/* <br></br>
             <Counter>  </Counter> */}
@@ -67,7 +86,7 @@ class App extends React.Component {
 
 <article>
   <h2>About me</h2>
-  <p>i have a computer technician background and i am have experience and IT Support , System Admin and now Web Developer </p>
+  <p>i have computer technician background and experience in IT Support , System Admin and now Web Developer as Freelancer </p>
 </article>
 
 <a href="https://www.linkedin.com/in/pedro-zenha/">Linkedin!</a>
@@ -76,8 +95,8 @@ class App extends React.Component {
 
 <article>
   <h2>As Web Developer</h2>
-  <p>I started learn Web Developer in November 2019 and soon became a passion, long time ago back to 2000
-     i was already familiar with html and that was the only web language at that time and i have create websites
+  <p>I started learn Web Developer in November 2019 and soon became a passion, long time ago back to year 2000
+     i was already familiar with html in that time was the only web language .
 
   </p>
 </article>
