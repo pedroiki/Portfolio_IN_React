@@ -6,8 +6,9 @@ import Title from "./components/Title.js";
 import Counter from "./components/Counter.js";
 import Nav     from "./components/Nav.js";
 import Footer from  "./components/Footer.js";
-import {Button} from "@material-ui/core" ;
-import Navebar2 from  "./components/Navebar2.js";
+import {ThemeProvider, Button} from "@material-ui/core" ;
+import theme from "./theme.js";
+
 
 
 // import Topnav from "./components/Topnav.js";
@@ -18,17 +19,18 @@ import Navebar2 from  "./components/Navebar2.js";
 class App extends React.Component { 
     render(){
       return (
+        <ThemeProvider theme={theme}>
         <div className="App">    
         {/* //isto quer dizer que tem uma class "app" nos estilos */}
-          <header className="App-header">
-          </header>
-      
+         
+        
 
 
 
 
+          <Nav/>
 
-<Navebar2></Navebar2>
+  
 
 <br></br>
 
@@ -131,6 +133,19 @@ class App extends React.Component {
       
     </iframe>
 
+    <iframe width="280" height="170" src="https://pedroiki.github.io/Mikel_Therapist/">
+      
+      </iframe>
+
+      <iframe width="280" height="170" src="https://pedroiki.github.io/login-firebase/">
+      
+      </iframe>
+
+      <iframe width="280" height="170" src="https://pedroiki.github.io/Comics_eCommerce-beta1.0/">
+      
+      </iframe>
+
+
 
 <br></br>
 <br></br>
@@ -187,6 +202,7 @@ class App extends React.Component {
 
 
         </div>
+        </ThemeProvider> 
       );
     }
 }

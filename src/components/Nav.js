@@ -1,34 +1,68 @@
-import React from "react" 
-import "./Nav.css" 
-class Nav extends React.Component {
 
-    render() {
-        return (
-          
-        
-
-            <ul className="links-list">
-                <li className="list-item" >
-                  <a className="link" href="https://pedroiki.github.io/portfolio-cgomes/" target="_blank">The Developer</a>
-                </li >
-                <li className="list-item">
-                  <a className="link"  href="https://pedroiki.github.io/portfolio-cgomes/#My-Portfolio" target="_blank">Projects</a>
-                </li>
-                <li className="list-item">
-                  <a className="link" href="https://api.whatsapp.com/send?phone=351919214504&text=Ol%c3%a1%21&source=&data="target="_blank"
-                   >Contact me on Whatsapp
-                  
-                  </a>
-                </li>
-             
-            </ul>
-          
+import React from 'react';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
 
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-        )
-
-    }
+  return (
+    <Typography
+      component="div"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box p={3}>{children}</Box>}
+    </Typography>
+  );
 }
 
-export default Nav
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.primary.main
+  },
+}));
+
+export default function SimpleTabs() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+          <Tab label="The Developer" target="_blank" href="https://pedroiki.github.io/portfolio-cgomes/#My-Portfolio" />
+          <Tab label="Projets" target="_blank" href="https://pedroiki.github.io/portfolio-cgomes/#My-Portfolio" />
+          <Tab label="Contact me on whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=351919214504&text=Ol%c3%a1%21&source=&data=" />
+        </Tabs>
+      </AppBar>
+    </div>
+  );
+}
