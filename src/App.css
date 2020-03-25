@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+
+
+
+
 .App {
+  font-family: 'Shadows Into Light', cursive;
   text-align: center;
-  background-color:rgba(150, 158, 37, 0.459) ; 
+  background-color:rgba(150, 158, 37, 0.459) ;
    min-height: 100vh;
 
-   
+
    /* #0B0B0D */
    /* #1D1919 */
 
-   
+
    align-items: center;
    justify-content: center;
    font-size: calc(10px + 2vmin);
-   color: #596157;
+   /* color: #596157; */
 }
 
 .App-logo {
@@ -32,7 +39,7 @@
 /* .Title {
 
   colour: rgb(67, 121, 67);
-  
+
   } */
 
 
