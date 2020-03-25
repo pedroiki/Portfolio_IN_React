@@ -68,16 +68,16 @@ class App extends React.Component {
           <br></br>
           <br></br>
 
-          <a href="https://pedroiki.github.io/portfolio-cgomes/" target="_blank">
+          <a href="https://pedroiki.github.io/mobile-tag/" target="_blank">
           <img src="https://pedroiki.github.io/portfolio-cgomes/images/04.jpg" width="400" height="300" frameBorder="0"
             className="jpg" to=""   ></img>
 </a>
 
-            
+
           <br></br>
           <br></br>
 
-          <a href="https://pedroiki.github.io/portfolio-cgomes/" target="_blank">
+          <a href="https://pedroiki.github.io/costeira.praia/" target="_blank">
           <img src="https://pedroiki.github.io/portfolio-cgomes/images/01.jpg" width="400" height="300" frameBorder="0"
             className="jpg"  ></img>
 </a>
