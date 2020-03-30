@@ -1,4 +1,6 @@
 import React from "react"
+import "./Title.css" 
+
 
 
 class Title extends React.Component {
@@ -8,7 +10,7 @@ class Title extends React.Component {
 
 
 
-            <h1>
+            <h1 className="Title"> 
                 {this.props.title}
             </h1>
 
