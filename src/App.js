@@ -82,6 +82,17 @@ class App extends React.Component {
             className="jpg"  ></img>
 </a>
 
+
+<br></br>
+
+           <a href="https://pedroiki.github.io/blog_html_css/" target="_blank">
+          <img src="https://pedroiki.github.io/portfolio-cgomes/images/010.jpg" width="400" height="300" frameBorder="0"
+            className="jpg"  ></img>
+
+            </a>
+
+
+
           <br></br>
           <br></br>
 
@@ -110,7 +121,9 @@ class App extends React.Component {
 
 
           <iframe width="400" height="300" src="https://pedroiki.github.io/blog_prototype/">
-          </iframe>í
+          </iframe>
+
+         
 
           <br></br>
           <br></br>
