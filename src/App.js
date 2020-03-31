@@ -84,6 +84,7 @@ class App extends React.Component {
 
 
 <br></br>
+<br></br>
 
            <a href="https://pedroiki.github.io/blog_html_css/" target="_blank">
           <img src="https://pedroiki.github.io/portfolio-cgomes/images/010.jpg" width="400" height="300" frameBorder="0"
